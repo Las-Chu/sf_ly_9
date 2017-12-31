@@ -1,12 +1,17 @@
 import numpy as np
 from keras.preprocessing import image
 from keras.applications import inception_v3
+from keras.applications.inception_v3 import preprocess_input
+from keras.layers import Dense, GlobalAveragePooling2D
+from keras.preprocessing.image import ImageDataGenerator
+from keras.optimizers import SGD
+
 import image_cropping
 
 # Resize all images (uncomment if need to be resized)
 #image_cropping.resize_all_images()
 
-
+'''
 # Load Keras' ResNet50 model that was pre-trained against the ImageNet database
 model = inception_v3.InceptionV3()
 
@@ -33,3 +38,4 @@ print("This is an image of:")
 for imagenet_id, name, likelihood in predicted_classes[0]:
     print(" - {}: {:2f} likelihood".format(name, likelihood))
 
+'''
