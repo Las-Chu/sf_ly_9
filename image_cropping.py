@@ -43,11 +43,11 @@ def process_image(folder, imageField):
     cv2.imwrite(fileNamewithFolder, imageMat)
 
 def ret_proc_image(image):
-    imageMat = cv2.imread(imageField)
+    imageMat = cv2.imread(image)
 
     im_h, im_w, im_c = imageMat.shape
     # print(im_h, im_w, im_c)
-    print(fileNamewithFolder, imageMat.shape)
+    print(imageMat.shape)
 
     r_of_w = im_w / gf.small_width
     r_of_h = im_h / gf.small_height

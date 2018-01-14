@@ -7,9 +7,12 @@ from keras.preprocessing.image import ImageDataGenerator
 from keras.optimizers import SGD
 
 import image_cropping
+import data_generator
 
-# Resize all images (uncomment if need to be resized)
-#image_cropping.resize_all_images()
+# Resize all images (uncomment if
+# need to be resized)
+image_cropping.resize_all_images()
+#data_generator.read_gt_m_data()
 
 '''
 # Load Keras' ResNet50 model that was pre-trained against the ImageNet database
